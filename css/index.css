@@ -12,7 +12,7 @@ body{
 
 #button_1
 {
-	margin-right: 15px;
+  margin-right: 15px;
 
 }
 
@@ -47,36 +47,17 @@ body{
 
 .postButtons
 {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding : 10px;
-	margin : 10px; 
-	height: 630px;
-}
-
-#button_3
-{
-	padding : 10px;
-	margin : 10px;
-	background-color : #CCCC00;
-	font-weight: bold;
-	font-size : 17px;
-}
-
-#button_4
-{
-	padding : 10px;
-	margin : 10px;
-	background-color : #CCCC00;
-	font-weight: bold;
-	font-size : 17px;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding : 10px;
+  margin : 10px; 
+  height: 630px;
 }
 
 .header
 {
-	margin : 5px;
-	padding : 5px;
+  margin : 5px;
+  padding : 5px;
 }
