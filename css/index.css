@@ -61,3 +61,23 @@ body{
   margin : 5px;
   padding : 5px;
 }
+
+#button_3
+{
+  padding : 10px;
+  margin : 10px;
+  background-color : #CCCC00;
+  font-weight: bold;
+  font-size : 17px;
+}
+
+#button_4
+{
+  padding : 10px;
+  margin : 10px;
+  background-color : #CCCC00;
+  font-weight: bold;
+  font-size : 17px;
+
+}
+
