@@ -1,3 +1,11 @@
+.deleteButton{
+    cursor: pointer;
+    margin: 2px 0px 2px 0px;
+    padding : 10px 0px 0px 0px;
+    float: right;
+    font-size: 25px;
+}
+
 .post {
     position: relative;
     width: 90%;
