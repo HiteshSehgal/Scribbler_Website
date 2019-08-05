@@ -1,0 +1,83 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+#button_1
+{
+  margin-right: 15px;
+
+}
+
+.topButtons 
+{
+    color : white;
+    background-color : blue;
+    padding : 10px;
+    margin : 10px 5px 10px 5px;
+    border : none;
+    float : right;
+}
+
+.logo-title
+{
+    font-family: 'Satisfy', cursive; 
+    color : blue;
+    padding-top: 20px; 
+    font-size : 35px;
+    text-decoration : none;
+    margin : 10px 10px 0px 10px;
+}
+
+.middleText
+{
+    font-family: 'MarckScript',cursive;
+    color : black;
+    font-size : 15px;
+    text-decoration : none;
+    margin : 2px 10px 0px 10px;
+}                                 
+
+.postButtons
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding : 10px;
+  margin : 10px; 
+  height: 630px;
+}
+
+.header
+{
+  margin : 5px;
+  padding : 5px;
+}
+
+#button_3
+{
+  padding : 10px;
+  margin : 10px;
+  background-color : #CCCC00;
+  font-weight: bold;
+  font-size : 17px;
+}
+
+#button_4
+{
+  padding : 10px;
+  margin : 10px;
+  background-color : #CCCC00;
+  font-weight: bold;
+  font-size : 17px;
+
+}
+
