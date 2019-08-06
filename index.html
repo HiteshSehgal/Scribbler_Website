@@ -1,61 +1,133 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-    <!-- Place all CSS for header in this file -->
-    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <head>
+        <!-- Place all CSS for header in this file -->
+        <link href='css\header.css' rel='stylesheet' type='text/css'>
 
-    <!-- Place all CSS for the rest of the elements in this file -->
-    <link href='css\index.css' rel='stylesheet' type='text/css'>
+        <!-- Place all CSS for the rest of the elements in this file -->
+        <link href='css\index.css' rel='stylesheet' type='text/css'>
 
-	<!-- Place all CSS for fonts in this file -->
-    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    	<!-- Place all CSS for fonts in this file -->
+        <link href='css\font.css' rel='stylesheet' type='text/css'>
 
-</head>
-<body>
-    <div id="main-container-div">
+        <!-- All meta tags -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-        <div class="header">
-            
-            <input class="topButtons" type="button" id = "button_1" value="Sign Up">
-            <input class="topButtons" type="button" id = "button_2" value="Sign In">
-            <a id="pageTitle" class="logo-title">ScriBBler</a> <br>
-            <p class="middleText">Explore. Imagine. Create</p>
+    <body>
+
+<!-- ------------------------------HEADER STARTS HERE------------------------------ -->
+
+        <div id="main-container-div">
+            <div class="header">
+                <input class="topButtons" type="button" id = "button_sign_up" value="Sign Up">
+                <input class="topButtons" type="button" id = "button_sign_in" value="Sign In">
+                <a id="pageTitle" class="logo-title">ScriBBler</a> <br>
+                <p class="middleText">Explore. Imagine. Create</p>
+            </div>
+
+<!-- ------------------------------HEADER ENDS HERE------------------------------ -->
+
+<!-- ------------------------------CENTER BUTTONS START HERE------------------------------ --> 
+
+            <div class="postButtons">
+    	        <input id="button_all_posts" type="button" value="All Posts">
+                <input id="button_create_post" type="button" value="Create Post">
+            </div>
+        </div>
+
+<!-- ------------------------------CENTER BUTTONS ENDS HERE------------------------------ --> 
+
+<!-- ------------------------------SIGN IN MODAL STARTS HERE------------------------------ -->
+
+        <!-- Insert code for Sign In modal here -->
+        <div class="modal" id="modal_sign_in">
+            <div id="sign_in_modal" class="modalContainer">
+              
+                <h1 style="text-align:center;"><b>Welcome Back!</b><span class="close">&times;</span></h1><hr>
+                        
+                <form id="sign_in_form" name="Sign_In_Form">
+                 
+                    <label for="sign_in_username" class="label-text">Username</label>
+                    <input type="text" id="sign_in_username" placeholder="Enter Username" required>
+
+                    <label for="sign_in_password" class="label-text">Password</label>
+                    <input type="password" id="sign_in_password" placeholder="Enter Password" required>
+                        
+                    <button type="submit" onclick="buttonSignIn(sign_in_username, sign_up_password)" class="sign_in_button">Sign In</button>
+
+                </form>
+                    
+                <div class="sign_in_footer">
+                    <p style="text-align: center;"><b>Not a Member? <a id="sign_up" href="#" onclick="">Sign Up</a></b></p>
+                </div>
+
+            </div>
+        </div>
+
+<!-- ------------------------------SIGN IN MODAL ENDS HERE-------------------------------- -->
+
+<!-- ------------------------------SIGN UP MODAL STARTS HERE------------------------------ -->
         
+        <!-- Insert code for Sign Up modal here -->    	
+        <div class="modal" id="modal_sign_up"  >
+            <div id="sign_up_modal" class="modalContainer">
+                
+                <h1 style="text-align:center;"><b>Get Started</b><span class="close">&times;</span></h1><hr>
+                
+                <form id="sign_up_form" name="Sign_Up_Form">
+                    
+                    <label for="sign_up_full_name" class="label-text">Full Name</label>
+                    <input type="text" id="sign_up_full_name" placeholder="Enter Full Name" required>
+
+                    <label for="sign_up_username" class="label-text">Username</label>
+                    <input type="text" id="sign_up_username" placeholder="Enter Username" required>
+                    
+                    <label for="sign_up_password" class="label-text">Password</label>
+                    <input type="password" id="sign_up_password" placeholder="Enter Password" required>
+                    
+                    <label for="sign_up_confirm_password" class="label-text">Confirm Password</label>
+                    <input type="password" id="sign_up_confirm_password" placeholder="Confirm Password" required>
+                    
+                    <button type="submit" onclick="buttonSignUp(sign_up_full_name , sign_up_username , sign_up_password , sign_up_confirm_password)" class="sign_up_button">Sign Up</button>
+
+                </form>
+
+            </div>
         </div>
-           
-        <div class="postButtons">
 
-	        <button id="button_3"> All Posts </button>
-            <button id="button_4"> Create Post </button>
+<!-- ------------------------------SIGN UP MODAL ENDS HERE------------------------------------ -->
 
+<!-- ------------------------------CREATE POST MODAL STARTS HERE------------------------------ -->
 
+        <!-- Insert code for Create Post modal here -->
+        <div class="modal" id="modal_create_post"  >
+            <div id="create_post_modal" class="modalContainer">
+
+                <h1 style="text-align:center;"><b>New Post</b><span class="close">&times;</span></h1>
+                
+                <form id="create_post_form" name="Create_Post_Form">
+                    <label for="create_post_title" class="label-text">Title:</label>
+                    <input type="text" id="create_posts_title">
+
+                    <label for="create_post_content" class="label-text">Content:</label>
+                    <textarea id="create_post_content" rows="15%" cols="80%"></textarea>
+                    
+                    <button type="submit" onclick="buttonCreatePost(create_post_title,create_post_content)" class="create_post_button">Create</button>
+
+                </form>
+            </div>
         </div>
 
-    </div>
+<!-- ------------------------------CREATE POST MODAL ENDS HERE------------------------------ -->
 
-    <div>
+    	<!-- Place all Javascript for header in this file -->
+    	<script src="js\header.js"></script>
+    	<!-- Place all Javascript for rest of the elements in this file -->
+        <script src="js\index.js"></script>
 
-    	<!-- Insert code for Sign In modal here -->
-
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
-    </div>
-
-    <div>
-
-    	<!-- Insert code for Create Post modal here -->
-
-    </div>
-
-	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js"></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
-    <script src="js\index.js"></script>
-
-</body>
+    </body>
 </html>
