@@ -57,8 +57,111 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
+
 .allPostsContainer {
     height: 100%;
     width: 100%;
 
 }
+
+/* -------------------- MODALS CSS STARTS HERE -------------------- */
+
+.modal
+{
+  display : none ;
+  position : fixed ;
+  z-index : 1 ; 
+  top : 0 ;
+  left : 0 ;
+  width : 100% ;
+  height : 100% ;
+  background-color : rgb(0,0,0) ;
+  background-color : rgba(0,0,0,0.6) ;
+}
+
+.modalContainer
+{
+   position : fixed ; 
+   left : 40% ;
+   top : 10% ;
+   overflow : auto ; 
+   background-color : white ; 
+}
+
+#sign_in_modal.modalContainer
+{
+  width : 400px ;
+  height : 450px ;
+  padding : 0px 20px ;
+  top : 10% ;
+  left : 35% ;
+}
+
+#sign_up_modal.modalContainer
+{
+  width :  350px ;
+  height : 550px ;
+  padding : 0px 20px ;
+}
+
+form 
+{
+  display : flex ;
+  flex-direction : column ;
+}
+
+.label-text
+{
+  font-weight : bold ;
+  margin-top : 15px ;
+  font-size : 17px;
+  color : black;  
+}
+
+input[type=text] , input[type=password]
+{
+  padding : 10px;
+  margin : 10px 0px;
+  border : none;
+  background-color : lightgrey;
+}
+ 
+button
+{
+  padding : 15px;
+  margin : 15px 0px;
+  cursor : pointer; 
+  background-color : SeaGreen;
+  color : white;
+  font-size : 15px;
+  border : none;
+}
+
+button:hover
+{
+  opacity: 0.8;
+}
+
+.sign_in_footer
+{
+  float : bottom;
+  font-size : 17px;
+  text-align : center;
+  color : black; 
+}
+
+.close
+{
+  font-size : 30px;
+  font-weight : bolder;
+  color : grey;
+  float : right;
+}
+
+.close:hover
+{
+  color : black ;
+  cursor : pointer ;
+}
+
+/* -------------------- MODALS CSS ENDS HERE -------------------- */

@@ -10,25 +10,78 @@
     </style>
 </head>
 <body>
-    <div id="main-container-div">
-        <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
 
-        </div>
-    </div>
-    <div>
+<!-- ------------------------------HEADER STARTS HERE------------------------------ -->
+
+        <div id="main-container-div">
+            <div class="header">
+                <input class="topButtons" type="button" id = "button_sign_up" value="Sign Up">
+                <input class="topButtons" type="button" id = "button_sign_in" value="Sign In">
+                <a id="pageTitle" class="logo-title">ScriBBler</a> <br>
+                <p class="middleText" style="color:white; font-size:22px;" >Explore. Imagine. Create</p>
+            </div>
+
+<!-- ------------------------------HEADER ENDS HERE------------------------------ -->
+
+<!-- ------------------------------SIGN IN MODAL STARTS HERE------------------------------ -->
 
         <!-- Insert code for Sign In modal here -->
+        <div class="modal" id="modal_sign_in">
+            <div id="sign_in_modal" class="modalContainer">
+              
+                <h1 style="text-align:center; color:black; "><b>Welcome Back!</b><span class="close">&times;</span></h1><hr>
+                        
+                <form id="sign_in_form" name="Sign_In_Form">
+                 
+                    <label for="sign_in_username" class="label-text">Username</label>
+                    <input type="text" id="sign_in_username" placeholder="Enter Username" required>
 
-    </div>
+                    <label for="sign_in_password" class="label-text">Password</label>
+                    <input type="password" id="sign_in_password" placeholder="Enter Password" required>
+                        
+                    <button type="submit" onclick="buttonSignIn(sign_in_username, sign_up_password)" class="sign_in_button">Sign In</button>
 
-    <div>
+                </form>
+                    
+                <div class="sign_in_footer">
+                    <p style="text-align: center;"><b>Not a Member? <a id="sign_up" href="#" onclick="">Sign Up</a></b></p>
+                </div>
 
-        <!-- Insert code for Sign Up modal here -->
+            </div>
+        </div>
 
-    </div>
+<!-- ------------------------------SIGN IN MODAL ENDS HERE-------------------------------- -->
+
+<!-- ------------------------------SIGN UP MODAL STARTS HERE------------------------------ -->
+        
+        <!-- Insert code for Sign Up modal here -->     
+        <div class="modal" id="modal_sign_up"  >
+            <div id="sign_up_modal" class="modalContainer">
+                
+                <h1 style="text-align:center; color:black;"><b>Get Started</b><span class="close">&times;</span></h1><hr>
+                
+                <form id="sign_up_form" name="Sign_Up_Form">
+                    
+                    <label for="sign_up_full_name" class="label-text">Full Name</label>
+                    <input type="text" id="sign_up_full_name" placeholder="Enter Full Name" required>
+
+                    <label for="sign_up_username" class="label-text">Username</label>
+                    <input type="text" id="sign_up_username" placeholder="Enter Username" required>
+                    
+                    <label for="sign_up_password" class="label-text">Password</label>
+                    <input type="password" id="sign_up_password" placeholder="Enter Password" required>
+                    
+                    <label for="sign_up_confirm_password" class="label-text">Confirm Password</label>
+                    <input type="password" id="sign_up_confirm_password" placeholder="Confirm Password" required>
+                    
+                    <button type="submit" onclick="buttonSignUp(sign_up_full_name , sign_up_username , sign_up_password , sign_up_confirm_password)" class="sign_up_button">Sign Up</button>
+
+                </form>
+
+            </div>
+        </div>
+
+<!-- ------------------------------SIGN UP MODAL ENDS HERE------------------------------------ -->
 
     <div class="allPostsContainer">
     <div class="post">
