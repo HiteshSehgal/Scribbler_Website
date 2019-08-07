@@ -1,20 +1,19 @@
-/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
-the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+/* -------------------- HEADER STYLING STARTS HERE -------------------- */
 
 .topButtons 
 {
-    color : white;
-    background-color : blue;
-    padding : 10px;
-    margin : 10px 5px 10px 5px;
-    border : none;
-    float : right;
+    color : white ;
+    background-color : blue ;
+    padding : 10px ;
+    margin : 5px 5px 10px 5px ;
+    float : right ;
 }
 
 .logo-title
 {
-    font-family : 'Satisfy', cursive ; 
-    color : DarkBlue ;
+    font-family : 'Satisfy' , cursive ; 
+    color : MediumBlue ;
     padding-top : 20px ; 
     font-size : 45px ; 
     text-decoration : none ;
@@ -40,3 +39,5 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 {
  	margin-right : 15px ;
 }
+
+/* -------------------- HEADER STYLING ENDS HERE -------------------- */

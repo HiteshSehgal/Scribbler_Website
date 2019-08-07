@@ -1,15 +1,21 @@
+
+/* -------------------- PRE (GIVEN) STYLING STARTS HERE -------------------- */
+
 body
 {
-  background: url('background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  margin: 0 !important;
-  background-size: 100% cover!important;
-  overflow:hidden;
-  display: block;
+  background : url('background.jpg') ;
+  background-repeat : no-repeat ;
+  background-attachment : fixed ;
+  background-position : center center ;
+  background-size : cover ;
+  margin : 0 !important ;
+  background-size : 100% cover !important ;
+  overflow : hidden ;
+  display : block ;
 } 
+
+/* -------------------- PRE (GIVEN) STYLING ENDS HERE -------------------- */
+
 
 /* -------------------- CENTER BUTTONS CSS STARTS HERE -------------------- */
 
@@ -44,10 +50,11 @@ body
 
 #main-container-div
 {
-    display : block;
+    display : block ;
 }
 
 /* -------------------- CENTER BUTTONS CSS ENDS HERE -------------------- */
+
 
 /* -------------------- MODALS CSS STARTS HERE -------------------- */
 
@@ -55,48 +62,49 @@ body
 {
   display : none ;
   position : fixed ;
+  background-color : rgb(0,0,0) ;
+  background-color : rgba(0,0,0,0.5) ;
   z-index : 1 ; 
   top : 0 ;
   left : 0 ;
   width : 100% ;
-  height : 100% ;
-  background-color : rgb(0,0,0) ;
-  background-color : rgba(0,0,0,0.6) ;
+  height : 100% ; 
+  overflow : auto ;
 }
 
 .modalContainer
 {
    position : fixed ; 
-   left : 40% ;
    top : 10% ;
+   left : 40% ;
    overflow : auto ; 
    background-color : white ; 
 }
 
 #sign_in_modal.modalContainer
 {
-  width : 400px ;
-  height : 450px ;
-  padding : 0px 20px ;
   top : 10% ;
   left : 35% ;
+  padding : 0px 20px ;
+  width : 400px ;
+  height : 450px ;
 }
 
 #sign_up_modal.modalContainer
 {
   width :  350px ;
-  height : 550px ;
+  height : 600px ;
   padding : 0px 20px ;
 }
 
 #create_post_modal.modalContainer
 {
-  left : 25% ;
-  top : 15% ;
   width : 50% ;
   height : 70% ;
-  padding : 15px ;
-  margin: 10px 5px 10px 5px ;
+  padding: 20px ;
+  left : 25% ;
+  top : 15% ;
+  margin-top : 10px ;
 }
 
 form 
@@ -108,57 +116,72 @@ form
 .label-text
 {
   font-weight : bold ;
-  margin-top : 15px ;
-  font-size : 17px;  
+  margin-top : 20px ;
+  margin-right : 5px ;
+  margin-bottom : 2px ;
+  margin-left : 0px;   
+  font-size : 20px ;  
 }
 
-input[type=text] , input[type=password]
+h1#id_1,
+h1#id_2,
+h1#id_3
 {
-  padding : 10px;
-  margin : 10px 0px;
-  border : none;
-  background-color : lightgrey;
+  text-align : center ;  
 }
- 
-input#create_post_title 
+
+input#sign_in_username,
+input#sign_in_password,
+input#sign_up_full_name,
+input#sign_up_username,
+input#sign_up_password,
+input#sign_up_confirm_password,
+input#create_post_title
 {
-  margin-right : 50%;
+  margin : 5px 0px ;
+  padding : 10px ;
+  background-color : #c0c0c08f ;
+  border : none ;
+} 
+
+/*input#create_post_title 
+{
+  margin-right : 50% ;
 }
+*/
 
 button
 {
-  padding : 15px;
-  margin : 15px 0px;
-  cursor : pointer; 
-  background-color : SeaGreen;
-  color : white;
-  font-size : 15px;
-  border : none;
-}
-
-button:hover
-{
-  opacity: 0.8;
+  padding : 15px ;
+  margin-top : 35px;
+  margin-right : 0px ;
+  margin-left : 0px ;
+  margin-bottom : 15px ; 
+  cursor : pointer ; 
+  background-color : ForestGreen ;
+  color : white ;
+  font-size : 15px ;
+  border : none ;
 }
 
 .sign_in_footer
 {
-  float : bottom;
-  font-size : 17px;
-  text-align : center;
-
+  font-size : 18px ;
+  text-align : center ;
 }
 
 .close
 {
   font-size : 30px;
-  font-weight : bolder;
-  color : grey;
-  float : right;
+  font-weight : bold;
+  color : grey ;
+  float : right ;
 }
 
 .close:hover
 {
+  font-size : 31px ;
+  font-weight : bolder ;
   color : black ;
   cursor : pointer ;
 }

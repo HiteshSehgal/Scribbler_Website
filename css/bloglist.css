@@ -1,106 +1,130 @@
-.post {
-    position: relative;
-    width: 90%;
-    height: 20%;
-    background: #fff;
-    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
-    float:left;
-    border-radius: 15px;
+
+/* -------------------- PRE STYLING (GIVEN) STARTS HERE -------------------- */
+
+.post
+{
+  position : relative ;
+    width : 35% ;
+    height : 25% ;
+  background : #fff ;
+  box-shadow : 0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19) ;
+  margin : 10px 10px 10px 20px ;
+  float : left ;
+  border-radius : 15px ;
 }
     
-.post-left {
-        width: 15%;            
-        max-width: 15%;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        font-weight: bold;
-        color: #000;
-}
-.post-content {
-        width: 75%;           
-        display: table-cell;
-        text-align: left;
-        background-color: #E8E8E8;
-        color: #000000;
-        border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
-}
-.post-title{
-    font-family: 'Itim', cursive;
-    font-weight: bold;
-    color: #2b312b;
-    font-size: 25px;
-    height: 25px;
-    }
-.post-more {
-    float: right;
-    cursor: pointer;
-    font-size: 18px;
-    margin-right: 0 !important;
-    padding-right: 0 !important;
-    padding-bottom: 10px;
-    font-size: 30px;
-}
-.post-desc{
-    height: 100px;
-    margin-bottom: 0 !important;
+.post-left 
+{
+  width : 15% ;            
+  max-width : 15% ;
+  display : table-cell ;
+  vertical-align : middle ;
+  text-align : center ;
+  font-weight : bold ; 
+  color : #000 ;
 }
 
-body {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 0 !important;
-    color: #fff;
-    background-color: orange;
-    background-size: 2000% 2000%;
+.post-content
+{
+  width : 75% ;           
+  display : table-cell ;
+  text-align : left ;
+  background-color : #E8E8E8 ;
+  color : #000000 ;
+  border-radius : 0 15px 15px 0 ;
+  padding : 0 20px ;      
 }
 
-.allPostsContainer {
-    height: 100%;
-    width: 100%;
-
+.post-title
+{
+  font-family : 'Itim' , cursive ;
+  font-weight : bold ;
+  color : #2b312b ;
+  font-size : 25px ;
+  height : 25px ;
+  overflow : hidden ;
 }
 
-/* -------------------- MODALS CSS STARTS HERE -------------------- */
+.post-more 
+{
+  float : right ;
+  cursor : pointer ;
+  font-size : 18px ;
+  margin-right : 0 !important ;
+  padding-right : 0 !important ;
+  padding-bottom : 10px ;
+    font-size : 30px ;
+}
+
+.post-desc
+{
+  height : 50px ;
+  margin-bottom : 0 !important ;
+  overflow : hidden ;
+}
+
+body
+{
+  height : 100% ;
+  width : 100% ;
+  position : relative ;
+  margin : 0 !important ;
+  color : #fff ;
+  background-color : orange ;
+  background-size : 2000% 2000% ;
+}
+
+.allPostsContainer
+{
+  height : 100% ;
+  width : 100% ;
+  display : flex ;
+  flex-direction : row ;
+  justify-content : space-around ;
+  flex-wrap : wrap ;
+}
+
+/* -------------------- PRE STYLING (GIVEN) ENDS HERE -------------------- */
+
+
+/* -------------------- MODALS 1 CSS STARTS HERE -------------------- */
 
 .modal
 {
   display : none ;
   position : fixed ;
+  background-color : rgb(0,0,0) ;
+  background-color : rgba(0,0,0,0.5) ;
   z-index : 1 ; 
   top : 0 ;
   left : 0 ;
   width : 100% ;
-  height : 100% ;
-  background-color : rgb(0,0,0) ;
-  background-color : rgba(0,0,0,0.6) ;
+  height : 100% ; 
+  overflow : auto ;
 }
 
 .modalContainer
 {
    position : fixed ; 
-   left : 40% ;
    top : 10% ;
+   left : 40% ;
    overflow : auto ; 
    background-color : white ; 
 }
 
 #sign_in_modal.modalContainer
 {
-  width : 400px ;
-  height : 450px ;
-  padding : 0px 20px ;
   top : 10% ;
   left : 35% ;
+  padding : 0px 20px ;
+  width : 400px ;
+  height : 450px ;
 }
 
 #sign_up_modal.modalContainer
 {
   width :  350px ;
-  height : 550px ;
+  height : 600px ;
   padding : 0px 20px ;
 }
 
@@ -113,55 +137,142 @@ form
 .label-text
 {
   font-weight : bold ;
-  margin-top : 15px ;
-  font-size : 17px;
-  color : black;  
+  margin-top : 20px ;
+  margin-right : 5px ;
+  margin-bottom : 5px ;
+  margin-left : 0px;   
+  font-size : 17px ;
+  color : black ;  
 }
 
-input[type=text] , input[type=password]
+h1#id_1,
+h1#id_2
 {
-  padding : 10px;
-  margin : 10px 0px;
-  border : none;
-  background-color : lightgrey;
+  text-align : center ;  
+  color : black ; 
+}
+
+input#sign_in_username,
+input#sign_in_password,
+input#sign_up_full_name,
+input#sign_up_username,
+input#sign_up_password,
+input#sign_up_confirm_password,
+input#create_post_title
+{
+  margin : 5px 0px ;
+  padding : 10px ;
+  background-color : #c0c0c08f ;
+  border : none ;
 }
  
 button
 {
-  padding : 15px;
-  margin : 15px 0px;
-  cursor : pointer; 
-  background-color : SeaGreen;
-  color : white;
-  font-size : 15px;
-  border : none;
-}
-
-button:hover
-{
-  opacity: 0.8;
+  padding : 15px ;
+  margin-top : 35px;
+  margin-right : 0px ;
+  margin-left : 0px ;
+  margin-bottom : 15px ; 
+  cursor : pointer ; 
+  background-color : ForestGreen ;
+  color : white ;
+  font-size : 15px ;
+  border : none ;
 }
 
 .sign_in_footer
 {
-  float : bottom;
-  font-size : 17px;
-  text-align : center;
-  color : black; 
+  font-size : 18px ;
+  text-align : center ;
+  color : black ; 
 }
 
 .close
 {
-  font-size : 30px;
-  font-weight : bolder;
-  color : grey;
-  float : right;
+  font-size : 30px ;
+  font-weight : bold ;
+  color : grey ;
+  float : right ;
 }
 
 .close:hover
 {
+  font-size : 31px ;
+  font-weight : bolder ;
   color : black ;
   cursor : pointer ;
 }
 
-/* -------------------- MODALS CSS ENDS HERE -------------------- */
+/* -------------------- MODALS 1 CSS ENDS HERE -------------------- */
+
+
+/* -------------------- MODALS 2 CSS STARTS HERE -------------------- */
+
+.modal_2
+{
+  width : 100% ;
+  height : 100% ; 
+  display : none ;
+  position : fixed ;
+  left : 0px ;
+  top : 0px ;
+  z-index : 1 ;
+  overflow : auto ;
+  background-color : rgb(4 , 4 , 3) ; 
+  background-color : rgba(4 , 4 , 3 , 0.5) ;
+ }
+
+.modal_pop_up
+{
+  background-color : white ;
+  position : fixed ;
+  padding : 20px ;
+  width : 450px ;
+  left : 35% ;
+  top : 30% ;
+  color : black ;
+  text-align : center ;
+}
+
+#button_yes
+{
+  width : 40% ;
+  float : right ;
+  color : white ;
+  background-color : ForestGreen ;
+  border : none ;
+  padding : 13px ;
+  margin-left : 0px ; 
+  margin-right : 10px ;
+  margin-bottom : 10px ;
+}
+
+#button_no
+{
+  width : 40% ;
+  float : left ;
+  color : white ;
+  background-color : Red ;
+  border : none ;
+  padding : 15px ;
+  margin-right : 0px; 
+  margin-left : 10px;
+  margin-bottom : 10px ;
+}
+
+/* -------------------- MODALS 2 CSS ENDS HERE -------------------- */
+
+
+/* -------------------- TRASH BUTTON CSS STARTS HERE -------------------- */
+
+.trash_button
+{
+  float : right ;
+  cursor : pointer ;
+  font-size : 18px ;
+  margin-right : 0 !important ;
+  padding-right : 0 !important ;
+  padding-top : 10px ;   
+}
+
+/* -------------------- TRASH BUTTON CSS ENDS HERE -------------------- */
