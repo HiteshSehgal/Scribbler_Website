@@ -1,4 +1,4 @@
-
+ 
 /* -------------------- MODALS JAVASCRIPT STARTS HERE -------------------- */
 
 // Getting the modals
@@ -155,15 +155,16 @@ function like_post()
 }
 
 // Function on click of comments button
-function comment_add(id)
+function comment_add(text_area)
 {
-  if (id.value.length>0)
+  if (text_area.value.length>0)
   {
-    var name = id.value ;
-    document.getElementById('all_comments').innerHTML += '<p id="comment">' + name + '</p>' ; 
+    var text_area_value = text_area.value ;
+    var paragraph = '<p id="comment">' + text_area_value + '</p>' ; 
+    var div = document.getElementById('all_comments');
+    div.innerHTML = paragraph + div.innerHTML ; 
     var all_comments = document.getElementById('comments_textarea');         
     all_comments.value=all_comments.defaultValue;
   }
 }
-
 /* -------------------- LIKE / EDIT / COMMENTS JAVASCRIPT ENDS HERE -------------------- */
