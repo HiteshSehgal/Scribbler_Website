@@ -120,7 +120,7 @@ function edit()
   content.contentEditable = "true";
   title.contentEditable = "true";
   content.style.border = "2px solid purple";
-  title.style.border = "2px solid purple";
+  title.style.border = "2px solid pink";
   button_edit.style.display = "none";
   button_save.style.display = "block";
   content.focus();
