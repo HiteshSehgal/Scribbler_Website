@@ -116,7 +116,7 @@
 <!-- ------------------------------CREATE POST MODAL STARTS HERE------------------------------ -->
 
         <!-- Insert code for Create Post modal here -->
-        <div class="modal" id="modal_create_post"  >
+        <div class="modal" id="modal_create_post">
             <div id="create_post_modal" class="modalContainer">
 
                 <h1 id="id_3">
@@ -126,10 +126,10 @@
                 
                 <form id="create_post_form" name="Create_Post_Form">
                     <label for="create_post_title" class="label-text">Title:</label>
-                    <input type="text" id="create_post_title" placeholder="Enter Post Title"></input>
+                    <input type="text" id="create_post_title" placeholder="Enter Post Title" required></input>
 
                     <label for="create_post_content" class="label-text">Content:</label>
-                    <textarea id="create_post_content" rows="13%" cols="80%" style="padding: 5px; font-size: 15px " placeholder="Enter Post Content"></textarea>
+                    <textarea id="create_post_content" rows="10%" cols="70%" style=" padding : 5px ; font-size : 15px " placeholder="Enter Post Content" required></textarea>
                     
                     <button type="submit" onclick="buttonCreatePost(create_post_title,create_post_content)" class="create_post_button">Create</button>
 

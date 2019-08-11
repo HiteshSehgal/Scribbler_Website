@@ -164,7 +164,7 @@ function comment_add(text_area)
     var div = document.getElementById('all_comments');
     div.innerHTML = paragraph + div.innerHTML ; 
     var all_comments = document.getElementById('comments_textarea');         
-    all_comments.value=all_comments.defaultValue;
+    all_comments.value = all_comments.defaultValue;
   }
 }
 /* -------------------- LIKE / EDIT / COMMENTS JAVASCRIPT ENDS HERE -------------------- */

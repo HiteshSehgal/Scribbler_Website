@@ -56,6 +56,26 @@ body
 /* -------------------- CENTER BUTTONS CSS ENDS HERE -------------------- */
 
 
+/* -------------------- MODAL (CREATE POST) CSS STARTS HERE -------------------- */
+
+#create_post_modal.modalContainer
+{
+ left : 25% ;
+ top : 12% ;
+ width : 50% ;
+ height : 70% ;
+ padding : 15px ;
+ margin-top : 10px ;
+}
+
+h1#id_3
+{
+  text-align : center ;  
+  color : black ; 
+}
+
+/* -------------------- MODAL (CREATE POST) CSS ENDS HERE -------------------- */
+
 
 
 
