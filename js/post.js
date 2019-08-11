@@ -161,10 +161,11 @@ function comment_add(text_area)
   {
     var text_area_value = text_area.value ;
     var paragraph = '<p id="comment">' + text_area_value + '</p>' ; 
-    var div = document.getElementById('all_comments');
+    var div = document.getElementById('adding_comments');
     div.innerHTML = paragraph + div.innerHTML ; 
-    var all_comments = document.getElementById('comments_textarea');         
-    all_comments.value = all_comments.defaultValue;
+    var adding_comments = document.getElementById('comments_textarea');         
+    adding_comments.value = adding_comments.defaultValue;
   }
 }
+
 /* -------------------- LIKE / EDIT / COMMENTS JAVASCRIPT ENDS HERE -------------------- */

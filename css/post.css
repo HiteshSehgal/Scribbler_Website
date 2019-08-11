@@ -65,11 +65,11 @@
 
 #adding_comments
 {
-  background-color : rgb(226, 228, 230) ;
+  background-color : silver ;
   padding : 10px ;
-  width : 59% ;
+  width : 65% ;
   display : flex ;
-  flex-direction : column-reverse ;
+  flex-direction : column ;
 }
 
 #comment
@@ -88,14 +88,6 @@
     background-color : #ff2e5e ;
     color : white ;
     border : none ;
-}
-
-#all_comments
-{
-  background-color : silver ;
-  width : 100% ;
-  height : auto ; 
-  border : 1px silver solid ; 
 }
 
 /* -------------------- LIKE / EDIT / COMMENT CSS ENDS HERE -------------------- */
